@@ -11,6 +11,6 @@
 
 function printRight(bool, inputLetter){
     
-    $( "#rightLetter" ).append( $( "h2" ) );
+    $( "#rightLetter" ).append( $( "h2" )).val(`${inputLetter}`);
     
 }
