@@ -34,7 +34,8 @@
 
 
     <div class="container">
-        <div id="answer"></div>
+        <div id="answer">
+        </div>
     </div>
     
     <!-- kevin -->
@@ -70,13 +71,13 @@
 <script>
     
     //printRightWord (jquery)
-    $( "#clickMe" ).click(function() {
-        printRight(true,"A")
-    });
+    // $( "#clickMe" ).click(function() {
+    //     printRight(true,"A")
+    // });
     
     $("#hint").append(`<p>${jaws.hint}</p>`);
     $("#category").append(`<p>${jaws.category}</p>`);
-
+    
 
     //addCanvas
     var canvas = document.getElementById("myCanvas");
@@ -86,7 +87,14 @@
 
     let word= 'jaws';
     console.log(stringOfArray);
-    inputLogic("w")
+   
+
+    //game
+    let input="w"; 
+    let stringArray= splitWord;
+    console.log("the splitword is= "+splitWord)
+
+    // inputLogic(input )
     
     
 </script>

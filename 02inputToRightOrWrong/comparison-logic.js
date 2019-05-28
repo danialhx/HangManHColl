@@ -16,6 +16,9 @@ function inputLogic(input) {
             // console.log(`There is a letter ${input} is correct`)
             // invoke function to update front-end
             countRight++
+            
+            let correctWord= input;
+
         } else {
             // console.log(`The given letter ${input} is wrong`)
             //function to run deduction of health to run here
