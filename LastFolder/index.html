@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <title>Hangman Game</title>
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <h1>Hangman by The Hacker Collective</h1>
+        
+    </div>
+    
+    <div class="container">
+        <!-- action="/action_page.php" -->
+        <form >
+            Enter your letter<br>
+            <input type="text" name="firstname"  placeholder="a,e,i,o,u, j,k,r, etc">  
+            <input type="submit" value="Submit">
+            
+        </form> 
+        
+    </div>
+    
+    <div class="container">
+        <div id="usedLetters">
+        </div>
+        
+        <div id="lives">
+            
+        </div>
+        
+    </div>
+    
+    
+    
+    <div class="container">
+        <div id="answer">
+        </div>
+    </div>
+    
+    <!-- kevin -->
+    <div class="container">
+        <div id="hint">Here is the hint</div>
+        <div id="category">Here is the category</div>
+    </div>
+    
+    <div class= "container" >
+        
+        <div id="rightWord">
+            
+        </div>
+        <button  id="clickMe"> Show me right letter</button>
+    </div>
+    
+    <div class="container">
+        <canvas id="myCanvas" width="200" height="100"
+        style="border:2px solid #c3c3c3;">
+        
+    </div>
+    
+    
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../03RightEndGame/printRight.js "></script>
+<script src="../01libraryAndHints/LibraryAndHint_Kevin.js"></script>
+<script src="../02inputToRightOrWrong/comparison-logic.js"></script>
+
+<script>
+    
+ 
+    //printRightWord (jquery)
+    // $( "#clickMe" ).click(function() {
+        //     printRight(true,"A")
+        // });
+        
+        $("#hint").append(`<p>The hint is: ${selectedWord.hint}</p>`);
+        $("#category").append(`<p>The category is: ${selectedWord.category}</p>`);
+        $("#lives").append(`<p>You have ${lives} lives</p>`);
+        // $("#usedLetters").append(`<p>You have ${lives} lives</p>`);
+        
+        
+        
+        //addCanvas
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0,0,150,75);
+        
+        let word= 'jaws';
+        console.log(stringOfArray);
+        
+        
+        //game
+        let input="w"; 
+        let stringArray= splitWord;
+        console.log("the splitword is= "+splitWord)
+        
+        // inputLogic(input )
+        
+        
+    </script>
+    
+    
+    
+    
+    
+    
+</body>
+
+
+
+
+</html>
