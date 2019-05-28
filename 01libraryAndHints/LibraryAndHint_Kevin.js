@@ -74,6 +74,6 @@ console.log(selectedWord.word);
 console.log("Hint : " + selectedWord.hint);
 
 //Split the selected word into its individual letters and store it an the array called splitWord.
-let splitWord = selectedWord.word.split("");
+let splitWord = selectedWord.word.toLowerCase().split("");
 console.log(splitWord);
 
