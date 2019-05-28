@@ -10,8 +10,8 @@
 * @return {return} 
 */
 
-function printRight(bool, inputLetter){
-    
-    $( "#rightLetter" ).append( $( "h2" )).val(`${inputLetter}`);
+function printRight(bool, inputLetter, targetId){
+        
+    $('<div>' + inputLetter + '</div>').appendTo('#drawing');
     
 }

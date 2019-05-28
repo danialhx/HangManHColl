@@ -28,34 +28,37 @@
             <div class="grid-item">8</div>
             <div class="grid-item">9</div>
         </div>
-    
+        
         
     </div>
-
-
+    
+    
     <div id="drawing">
-
+        
     </div>
-
-    <div id="rightWord">
-
+    
+    <div class= "container" id="rightWord">
+        <button  id="clickMe"> Show me right word</button>
     </div>
-
+    
     <div id="letters ">
-
+        
     </div>
-    
-    <input id="clickMe" type="button" value="clickme" onclick="printRight();" />
-    
-    
-    
     
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="./RightEndGame/printRight.js "></script>
+<script src="./03RightEndGame/printRight.js "></script>
 <script src="main.js "></script>
+
+<script>
+    
+    $( "#clickMe" ).click(function() {
+        printRight(true,"A")
+    });
+    
+</script>
 
 
 
