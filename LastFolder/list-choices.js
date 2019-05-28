@@ -1,7 +1,7 @@
 // Allow an array to save all the right characters chosen made
 
 //Accept input from user
-let input = "a"; // Sample input
+// let input = "a"; // Sample input
 
 // Initialize Array to store correct words
 let correctArr = []
@@ -20,9 +20,9 @@ function wrongChar (input) {
 };
 
 
-wrongChar(input); // test whether code is working
+// wrongChar(input); // test whether code is working
 
-console.log(wrongArr); // Expected output = ['a']
+// console.log(wrongArr); // Expected output = ['a']
 
 
 
