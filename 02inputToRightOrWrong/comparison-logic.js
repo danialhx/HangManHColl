@@ -4,29 +4,31 @@ function gameOver() {
 };
 
 // let input = "a";
-// let stringOfArray = ["h","a","n","g","m","a","n"];
+let stringOfArray = ["j","a","w","s"];
 
 // function logic if stringArray contains input
 let lives = 9;
 
 function inputLogic(input) {
-    let countWrong=0;
+    let countRight=0;
     for (let i = 0; i < stringOfArray.length; i++) {
         if (stringOfArray[i] == input) {
-            console.log(`There is a letter ${input} is correct`)
+            // console.log(`There is a letter ${input} is correct`)
             // invoke function to update front-end
+            countRight++
         } else {
-            console.log(`The given letter ${input} is wrong`)
+            // console.log(`The given letter ${input} is wrong`)
             //function to run deduction of health to run here
-           countWrong++
+          
             // console.log (`Your lives is now ${lives}`);
         }
     }
 
-    if(countWrong>1){
+    // if you do not have at least 1 right then you lose a life
+    if(!(countRight>=1)){
         lives--;
-        console.log (`Your lives is now ${lives}`); 
-    }
+    } 
+    console.log (`Your lives is now ${lives}`);
 
     if(lives <= 0) {
         gameOver();
