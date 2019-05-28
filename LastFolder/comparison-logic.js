@@ -30,10 +30,10 @@ function inputLogic(input) {
 
     // if you do not have at least 1 right then you lose a life
     if(!(countRight>=1)){
-        let correct=false;
+        correct=false;
         lives--;
     } else{
-        let correct=true;
+        correct=true;
     }
     console.log (`Your lives is now ${lives}`);
 
