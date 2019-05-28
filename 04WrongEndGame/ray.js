@@ -7,15 +7,12 @@
  Finish when the player has guessed the word.
 */
 
-let limit = 9;
-let wrongGuesses;
+let lives = 9;
 
 
-
-    let remainingGuesses = limit - wrongGuesses; 
-
-    if ( expectedAnswer.indexOf( inputAnswer ) === -1 ) {
-        console.log( "That letter in not in the secret word." );
-        wrongGuesses += 1;
-        return;
+    else if (stringOfArray[i] != input) {
+        lives--;
+        console.log (`Your lives is now ${lives}`)
+        if (lives = 0 && lives < 0) gameOver();
     }
+
