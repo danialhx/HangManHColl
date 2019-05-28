@@ -11,5 +11,7 @@
 <p>05.01.01 - Hints</p>
 <p>05.01.02 - The Guess Word</p>
 <p>05.01.03 - buttons for input and chosen letters (26Button, one for each letter)</p>
+<p>05.01.03.01 - change colors for right or wrong letter chosen</p>
 <p>05.01.04 - lives left</p>
+<p>05.01.04.01 - additional gui</p>
 <p>05.01.05 - endGameDisplay Win or Lose</p>
