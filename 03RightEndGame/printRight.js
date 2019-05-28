@@ -12,6 +12,6 @@
 
 function printRight(bool, inputLetter, targetId){
         
-    $('<div>' + inputLetter + '</div>').appendTo('#drawing');
+    $('<div>' + inputLetter + '</div>').appendTo('#rightWord');
     
 }
