@@ -12,7 +12,7 @@
 
 function printRight(correct, inputLetter){
 
-    if(correct===true){
+    if(correct){
         $('<div>' + inputLetter + '</div>').appendTo('#rightWord').css('color', 'black');
 
     }else {

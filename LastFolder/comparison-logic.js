@@ -13,12 +13,15 @@ let correct= false ;
 function inputLogic(input) {
     let countRight=0;
     for (let i = 0; i < stringOfArray.length; i++) {
+        // console.log(input);
+        console.log(stringOfArray[i])
+        console.log(stringOfArray[i]===input)
         if (stringOfArray[i] == input) {
             // console.log(`There is a letter ${input} is correct`)
             // invoke function to update front-end
             countRight++
             
-            let correctWord= input;
+            correctWord= input;
 
         } else {
             // console.log(`The given letter ${input} is wrong`)
@@ -28,12 +31,12 @@ function inputLogic(input) {
         }
     }
 
-    // if you do not have at least 1 right then you lose a life
-    if(!(countRight>=1)){
+    // if have at least one right then your guess is correct 
+    if((countRight>=1)){
+        correct=true;
+    } else{
         correct=false;
         lives--;
-    } else{
-        correct=true;
     }
     console.log (`Your lives is now ${lives}`);
 
